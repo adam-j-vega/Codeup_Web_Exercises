@@ -1,6 +1,6 @@
 <?php
 
-var_dump($_POST);
+var_dump((int)$_POST);
 var_dump($_GET);
 
 ?>
@@ -55,55 +55,49 @@ var_dump($_GET);
 		<form method="POST">
 			<p>Where was Adam born?</p>
 			<label>
-				<input type="radio" id="q1a" name="q1" value="New Orleans" />
+				<input type="radio" name="q1" value="New Orleans" />
 				New Orleans
-			</label>
-					<label>
-				<input type="radio" id="q1b" name="q1" value="San Antonio" />
+				<input type="radio" name="q1" value="San Antonio" />
 				San Antonio
-			</label>
-					<label>
-				<input type="radio" id="q1c" name="q1" value="Philadelphia" />
+				<input type="radio" name="q1" value="Philadelphia" />
 				Philadelphia
-			</label>
-					<label>
-				<input type="radio" id="q1d" name="q1" value="San Francisco" />
+				<input type="radio" name="q1" value="San Francisco" />
 				San Francisco
-			</label>
-					<label>
-				<input type="radio" id="q1e" name="q1" value="Corpus Christi" />
+				<input type="radio" name="q1" value="Corpus Christi" />
 				Corpus Christi
 			</label>
 			<p>What country does Adam's surname come from?</p>
-			<label>
-				<input type="radio" id="q2a" name="q2" value="England" />
-				England
-			</label>		
-			<label>
-				<input type="radio" id="q2b" name="q2" value="Germany" />
-				Germany
-			</label>
-			<label>
-				<input type="radio" id="q2c" name="q2" value="Ireland" />
-				Ireland
-			</label>	
-			<label>
-				<input type="radio" id="q2d" name="q2" value="Spain" />
-				Spain
-			</label>
-			<label>
-				<input type="radio" id="q2e" name="q2" value="Austria" />
-				Austria
-			</label>
+			<select name="surname_question" id="surname_question"/>
+				<option>Ireland</option>
+				<option selected>Spain</option>
+				<option>Germany</option>
+				<option>England</option>
+				<option>Austria</option>
+			</select>
+			<br>
 			<p>What countries does Adam's ancestors come from?</p>
-					<label><input type="checkbox" id="countries_question1" name="countries_question[]" value="Germany"> Germany</label>
-					<label><input type="checkbox" id="countries_question2" name="countries_question[]" value="Spain"> Spain</label>
-					<label><input type="checkbox" id="countries_question3" name="countries_question[]" value="Ireland"> Ireland</label>
-					<label><input type="checkbox" id="countries_question4" name="countries_question[]" value="England"> England</label>
-					<label><input type="checkbox" id="countries_question5" name="countries_question[]" value="Mexico"> Mexico</label>
-			
-		</form>		
-
+					<label><input type="checkbox" name="countries_question[]" value="Germany"> Germany</label>
+					<label><input type="checkbox" name="countries_question[]" value="Spain"> Spain</label>
+					<label><input type="checkbox" name="countries_question[]" value="Ireland"> Ireland</label>
+					<label><input type="checkbox" name="countries_question[]" value="England"> England</label>
+					<label><input type="checkbox" name="countries_question[]" value="Mexico"> Mexico</label>
+			<br>
+				<input type="submit" value="Send" />
+			<br>
+		</form>	
+	<h>Select Testing</h>
+	<br>
+		<form method="POST">
+			<label for="yes_or_no">Yes or No?</label>
+			<select name="yes_or_no" id="yes_or_no"/>
+				<option>Yes</option>
+				<option selected>No</option>
+			</select>
+			<br>
+				<input type="submit" value="Send" />
+			<br>
+		</form>
+		
 </body>
 <html>
 
