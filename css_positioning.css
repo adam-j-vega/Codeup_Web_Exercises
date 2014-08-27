@@ -1,0 +1,67 @@
+#container {
+			margin: 50px auto;
+			margin-top: 50px;
+		    width: 400px;
+		    height: 200px;
+		    padding: 10px;
+		/*    border: solid black 1px;*/
+		}
+
+		.header-link {
+			text-align: left;
+			font-size: 32px;
+			margin-bottom: 55px;
+		}
+
+
+		p {
+			font: Helvetica;
+		}
+
+		.box {
+			color: white;
+			margin-bottom: 50px;
+			margin-right: 50px;
+			padding: 11px;
+			border: 1px solid black;
+			width: 50px;
+			height: 50px;
+			float: left;
+		}
+
+		.arrow {
+		    border: none;
+		    position: relative;
+		    top: -90px;
+		    left: 45px;
+		}
+
+
+		.red { 
+			
+			background-color: red;
+		}
+
+
+		.orange {
+			background-color: orange;
+		}
+
+		.yellow {
+			background-color: yellow;
+			
+		}
+
+		.green {
+			background-color: green;
+		}
+
+		.blue {
+			background-color: blue;
+			
+		}
+
+		.purple {
+			background-color: purple;
+		}
+		</style>
