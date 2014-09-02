@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		</head>
+		<body>
+			<script>
+				// todo: Ask the user for their name.
+					var input = prompt('What is your name?');
+
+					
+				//       Keep asking if an empty input is provided.
+					// for (; input==null, input=='';) {
+					// 	input = prompt('What is your name?');
+					// }
+
+
+					while (input==null)
+					{
+						input = prompt('What is your name?');
+					}
+					while (input=='')
+					{
+						input = prompt('What is your name?');
+					}
+					
+				
+
+				// todo: Show an alert message that welcomes the user based on their input.
+					alert('Welcome '+input);
+
+
+				// todo: Ask the user if they like pizza.
+				//       Based on their answer tell show a creative alert message.
+					var pizza_question = prompt('Do you like Pizza?');
+
+					while (pizza_question==null)
+					{
+						input = promt('TELL ME IF YOU LIKE THE PIZZA');
+					}
+					while (pizza_question=='No')
+					{
+						alert('What is wrong with you?');
+						break;
+					}
+			</script>
+		</body>
+	</html>
