@@ -4,13 +4,18 @@
 		</head>
 		<body>
 			<script>
-			var names= ['Isaac','Benjamin','Jason','Chris'];
-			console.log(names.length);
-			arrlength=names.length;
-
-			for(var i= 0;i<names.length; i++) {
-			console.log(names[i]);
-			}  
+				var names = ['Isaac','Benjamin','Jason','Chris'];
+				console.log(names.length);
+				arrlength=names.length;
+				//iterates by index to print out names in javascript
+				for(var i= 0;i<names.length; i++) {
+					console.log(names[i]);
+				} 
+				//iterates by index to print out names with a forEach loop 
+				names.forEach(function (element, index, array) {
+					console.log(element);
+					i++;
+				});
 
 			</script>
 		</body>
