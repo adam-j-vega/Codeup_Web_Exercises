@@ -5,28 +5,28 @@
 	</head>
 	<body>
 		<script>
-		var i =Math.floor((Math.random()*50)+1);
+			var i = Math.floor((Math.random()*50)+1);
 
-		for (;i%2 !== 0 ;)
-		{
-			console.log('Random odd number to skip is:' +i);
-			break;
-		}
+			for (;i%2 !== 0 ;)
+			{
+				console.log('Random odd number to skip is:' +i);
+				break;
+			}
 
-		for (var n = 1; n < 50; n+=2)
-		{	
-			if(n==i)
-			{
-				console.log('Yipes! Skipping number is:'+i);
-				continue;
+			for (var n = 1; n < 50; n+=2)
+			{	
+				if(n == i)
+				{
+					console.log('Yipes! Skipping number is:'+i);
+					continue;
+				}
+				else
+				{
+					console.log('Here is an odd number:'+n);
+					continue;
+				}
+				
 			}
-			else
-			{
-				console.log('Here is an odd number:'+n);
-				continue;
-			}
-			
-		}
 
 		</script>
 

@@ -2,14 +2,15 @@
 <html>
 	<head>
 	    <title>DOM: Query and Modify</title>
+	    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	</head>
 	<body>
-
+		<div class='container'/>
 	    <h1 id="main-header">Hello World!</h1>
 	    <button id="btn1">Javascript is Cool!</button>
 	    <br>
 	    <br>
-	    <button id="btn2">Make 'em grey</button>
+	    <button id="btn2">Change item colors</button>
 	    <ul>
 	        <li data-dbid="1">Item 1</li>
 	        <li data-dbid="2">Item 2</li>
@@ -17,6 +18,8 @@
 	        <li data-dbid="4">Item 4</li>
 	        <li data-dbid="5">Item 5</li>
 	    </ul>
+	    <br>
+	    <br>
 	    <button id="btn3">Make this blue!</button>
 	    <h2 id="sub-header">Hello Again.</h2>
 	    <p class="sub-paragraph">
@@ -69,7 +72,7 @@
 		       	var listItems = document.getElementsByTagName('li');
 		        for (var i = 1; i < listItems.length; i+=2) {
 		        	listItems[i].style['color'] = 'grey';
-		        	listItems[0].style['color'] = 'grey';
+		        	listItems[0].style['color'] = 'blue';
 
 		        }
 		    }
@@ -88,4 +91,4 @@
 	    </script>
 
 	</body>
-	</html>
+</html>
