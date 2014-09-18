@@ -17,8 +17,6 @@ $dbc = new PDO('mysql:host=127.0.0.1;dbname=codeup_pdo_test_db', 'adam_vega', 'N
 // Tell PDO to throw exceptions on error
 $dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-
-
 //============================================================================
 
 
@@ -38,8 +36,6 @@ function get_national_parks($dbc,$offset)
 // isset($_GET['offset']) ? intval($_GET['offset']) : 0;
 
 $page = get_national_parks($dbc,$offset);
-
-
 ?>
 
 <html>
