@@ -110,7 +110,7 @@ $page = get_national_parks($dbc,$offset);
 			</div>
 			<h1>Add a National Park</h1>
 			<form action="national_parks.php" method="POST">
-			Name: <input type="text" required name="name"><br>
+			Name: <input type="text" required value="<?= isset($_POST['name']) ? $_POST['name'] : ''?>"><br>
 			Location: <input type="text" required name="location"><br>
 			Date Established: <input type="date" required name="date_established"><br>
 			Area in Acres: <input type="number" required name="area_in_acres"><br>
