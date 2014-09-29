@@ -2,18 +2,30 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-		<title>Address Book</title>
+		<title>JQuery Exercise</title>
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-	</head>
-	<body>
 		<script>
 			$(document).ready(function() {
-    			alert( 'The DOM has finished loading!' );
+    				$('.codeup').css('border-style', 'solid').css('border-color', 'red').css('border-width', '1px');
 			});
 		</script>
 
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1 id="jqueryJumbotron">This is jquery</h1>
+			</div>
+			<h1 id="jqueryHeader" class="codeup">jquery is cool!</h1>
+			<p id="LoremIpsumPar" class="codeup">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<ul id="unorderedList">
+				<li>Sequitor</li>
+				<li>Sequitor</li>
+				<li>Sequitor</li>
+			</ul>
+		</div>
 
 	</body>
 </html>
