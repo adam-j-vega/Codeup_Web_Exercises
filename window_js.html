@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Delayed Autosave</title>
-</head>
-<body>
+    <head>
+        <title>Delayed Autosave</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <title>JQuery Exercise</title>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script>
+            // $(document).ready(function() {
+            //     $('#important').keyup(function() {
+            //         setTimeout(function(){
+            //             alert('Item saved!');
+            //             $('this').autosave();
+            //         }, 5000);
+            //      });
+            // });
+        </script>
+    </head>
+    <body>
 
-    <h2>Autosaving Text Input</h2>
-    <textarea rows="10" cols="60" id="important"></textarea>
+        <h2>Autosaving Text Input</h2>
+        <textarea rows="10" cols="60" id="important"></textarea>
+        <script>
+            function autosave() {
 
-    <script>
-    	var timeoutId;
-        function save() {
-            alert('Saved!');
-        }
+                var timeoutId;
+                function save() {
+                    alert('Saved!');
+                }
+                function autosave() {
+                    var delay = 5000;
+                    clearTimeout(timeoutId);
+                    timeoutId = setTimeout(save, delay);
 
-        function autosave() {
-        	clearTimeout(timeoutId);
+                    $('#important').keyup(autosave);
+                }
 
-            // todo:
-            // Use setTimeout and clearTimeout within this function
-		    // so that the save() function is called 5 seconds after
-            // the last key up event. If a new key up event occurs,
-            // you need to cancel the existing timer and set a new one.
-
-			timeoutId = setTimeout(save, 5000);r
-		}
-
-        // don't modify the line below
-        // this causes the autosave function to be called whenever
-        // a key up event occurs in the textarea
-        // we will learn about events in the DOM lessons
-        var textarea = document.getElementById('important');
-        textarea.addEventListener('keyup', autosave, false);
-
-    </script>
-
-</body>
+</script>
+    </body>
 </html>
