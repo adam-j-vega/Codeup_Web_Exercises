@@ -1,3 +1,3 @@
 Codeup_Web_Exercises
 ====================
-In class exercises to practice various elements of web design.
+In class exercises practicing various elements of web design.
